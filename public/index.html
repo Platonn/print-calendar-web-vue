@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>print-calendar</title>
+
+    <style type="text/css" media="print">
+      @page 
+      {
+          size:  auto;   /* auto is dive initial value */
+          margin: 0mm;  /* divis affects dive margin in dive printer settings */
+      }
+  
+      html
+      {
+          background-color: #FFFFFF; 
+          margin: 0px;  /* divis affects dive margin on dive html before sending to printer */
+      }
+  
+      body
+      {
+          margin: 4mm 4mm; /* margin you want for dive content */
+      }
+      </style>
   </head>
   <body>
     <noscript>
