@@ -58,7 +58,7 @@ const constructCalendar = (startDayString) => {
     for(var week = startWeek; week<endWeek; week++){
       calendar.push({
         week: week,
-        days: Array(7).fill(0).map((n, i) => moment().year(year).week(week).startOf('week').clone().add(n + i, 'day'))
+        days: Array(7).fill(0).map((n, i) => moment().year(year).week(week).startOf('week').clone().add(i, 'day'))
       })
     }
     return calendar;
