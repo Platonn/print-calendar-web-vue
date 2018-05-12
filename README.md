@@ -31,9 +31,7 @@ After that, you can print a document (`Ctrl + P` in Chrome browser).
 
 #### Custom start date
 
-You may specify exact day to start from, passing it in URL. Example: 
-
-But allowed are also:
+You may specify exact day to start from, passing it in URL:
 ```
 http://localhost:8080/#/12          # day only (current month and year by default)
 http://localhost:8080/#/12-05       # day and month only (current year by default)
