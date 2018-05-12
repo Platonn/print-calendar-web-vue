@@ -15,7 +15,7 @@ You need to install npm or yarn
 To install dependencies
 
 ```
-yarn  install
+yarn install
 ```
 
 And to run project
@@ -26,12 +26,17 @@ yarn serve
 
 Then you can go to `http://localhost:8080` in your browser to see the calendar.
 
-You may specify exact day to start from, passing it in URL. Example: `http://localhost:8080/#/12-05-2018`
+After that, you can print a document (`Ctrl + P` in Chrome browser).
+
+#### Custom start date
+
+You may specify exact day to start from, passing it in URL. Example: 
 
 But allowed are also:
 ```
-http://localhost:8080/#/12  # day only (current month and year by default)
-http://localhost:8080/#/12-05  # day and month only (current year by default)
+http://localhost:8080/#/12          # day only (current month and year by default)
+http://localhost:8080/#/12-05       # day and month only (current year by default)
+http://localhost:8080/#/12-05-2018
 ```
 
 or in other format (with dot separators)
@@ -61,4 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* I used to see my friend typing all numbers in Word document manually and playing with borders' widths every two months. However, her idea of having one-A4-sheet calendar was appealing to me. So I decided to automate the process of preparing it.
+I used to see my friend typing all numbers in Word document manually and playing with borders' widths every two months. However, her idea of having one-A4-sheet calendar was appealing to me. So I decided to automate the process of preparing it.
