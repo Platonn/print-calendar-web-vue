@@ -50,7 +50,7 @@ yarn build
 
 ## Built With
 
-* [Vue](hhttps://github.com/vuejs/vue) - A progressive, incrementally-adoptable JavaScript framework for building UI on the web
+* [Vue](https://github.com/vuejs/vue) - A progressive, incrementally-adoptable JavaScript framework for building UI on the web
 * [Vue CLI](https://github.com/vuejs/vue-cli) - CLI for rapid Vue.js development
 * [Vue Router](https://github.com/vuejs/vue-router) - The official router for Vue.js
 * [MomentJS](https://github.com/moment/moment) - Parse, validate, manipulate, and display dates in javascript
