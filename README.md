@@ -1,9 +1,9 @@
-# print-calendar
+# print-calendar-web
 
 Renders a dense 12 weeks calendar to be printed in one A4 sheet. It starts from today or a day passed in url.
 
 ## Demo
-[https://platonn.github.io/print-calendar/](https://platonn.github.io/print-calendar/)
+[https://platonn.github.io/print-calendar/](https://platonn.github.io/print-calendar-web/)
 
 ## Getting Started
 
