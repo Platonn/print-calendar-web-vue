@@ -124,7 +124,7 @@ export default {
 .calendar {
   --border-color: black;
   --cell-width: 25mm;
-  --cell-height: 21mm;
+  --cell-height: 20.5mm;
   
   text-align: left;
   border-width: 0 1px 1px 0;
