@@ -102,7 +102,7 @@ export default {
     },
 
     hasBorderLeft(day, week){
-      const isFirstDayOfWeek = day === week[0]
+      const isFirstDayOfWeek = day === week.days[0];
       
       return !isFirstDayOfWeek && this.isFirstDayOfMonth(day)
     },
