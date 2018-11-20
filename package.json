@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "cd dist && now && now alias print-calendar && cd .."
+    "now:deploy": "now dist -n print-calendar",
+    "now:alias": "now alias print-calendar",
+    "deploy": "npm run now:deploy && npm run now:alias"
   },
   "dependencies": {
     "moment": "^2.22.1",
