@@ -157,7 +157,7 @@ export default {
 .cell {
   width: var(--cell-width);
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 900;
   border-left: 1px solid var(--border-color);
   margin: 0;
