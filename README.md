@@ -3,7 +3,7 @@
 Renders a dense 12 weeks calendar to be printed in one A4 sheet. It starts from today or a day passed in url.
 
 ## Demo
-[https://platonn.github.io/print-calendar-web-vue/](https://platonn.github.io/print-calendar-web-vue/)
+[https://print-calendar.now.sh](https://print-calendar.now.sh)
 
 ## Getting Started
 
