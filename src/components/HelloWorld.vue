@@ -36,7 +36,7 @@ moment.locale('pl')
 
 
 //spike todo: calculate from given day, currently today
-const WEEKS_NUMBER = 12
+const WEEKS_NUMBER = 13
 const FIRST_DAY_OF_WEEK = 1; // monday
 const weekDayNamesStandard = moment.weekdaysShort()
 const shiftedPartOfWeek = weekDayNamesStandard.slice(0, FIRST_DAY_OF_WEEK)
@@ -141,7 +141,7 @@ export default {
 .calendar {
   --border-color: black;
   --cell-width: 25mm;
-  --cell-height: 20.5mm;
+  --cell-height: 18.75mm;
   
   text-align: left;
   border-width: 0 1px 1px 0;
