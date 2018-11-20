@@ -1,13 +1,22 @@
 <template>
   <div class="calendar">
     <ul class="week">
-      <li v-for="weekDayName in weekDayNames" v-bind:key="weekDayName" class="cell cell--dayName">
+      <li v-for="(weekDayName, index) in weekDayNames" v-bind:key="weekDayName" class="cell cell--dayName"
+        v-bind:class="{ 
+          'cell--marginRight': index===4,
+          'cell--gray': index===5 || index==6,
+        }">
         {{ weekDayName }}
       </li>
     </ul>
     <ul v-for="week in calendar" v-bind:key="week.week" class="week">
       <li v-for="day in week.days" v-bind:key="day.date()" class="cell cell--day"
-          v-bind:class="{ 'cell--borderTop': hasBorderTop(day, week), 'cell--borderLeft': hasBorderLeft(day, week) }">
+          v-bind:class="{ 
+            'cell--borderTop': hasBorderTop(day, week),
+            'cell--borderLeft': hasBorderLeft(day, week),
+            'cell--marginRight': hasMarginRight(day, week),
+            'cell--gray': isGray(day),
+          }">
         {{ formatDay(day) }}
       </li>
     </ul>
@@ -114,6 +123,14 @@ export default {
 
       return !isFirstWeekOfCalendar && monthOfDay !== monthOfDayBeforeOneWeek;
     },
+
+    hasMarginRight(day){
+      return day.day() === 5; // Friday
+    },
+
+    isGray(day) {
+      return day.day() === 6 || day.day() === 0; // Saturday or Sunday
+    },
     
   }
 }
@@ -147,12 +164,17 @@ export default {
   background-color: white;
 }
 
+.cell--marginRight {
+  border-right: 1px solid var(--border-color);
+  margin-right: 1px;
+}
+
 .cell--dayName {
   text-align: center;
-    height: 3mm;
-    padding: 1mm;
-    border-bottom: 1px solid black;
-    margin-bottom: 1px;
+  height: 3mm;
+  padding: 1mm;
+  border-bottom: 1px solid black;
+  margin-bottom: 1px;
 }
 
 .cell--day {
@@ -168,6 +190,10 @@ export default {
 .cell--borderLeft {
   border-left: 2px solid var(--border-color);
   width: calc(var(--cell-width) - 1px);
+}
+
+.cell--gray {
+  background-color: #f0f0f0;
 }
 
 ul {
